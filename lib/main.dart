@@ -25,6 +25,7 @@ class _MyAppState extends State<MyApp> {
       theme: lightThemeData(context),
       darkTheme: darkThemeData(context),
       // themeMode: islight ? ThemeMode.dark : ThemeMode.light,
+      themeMode: ThemeMode.system,
       home: Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.arrow_back),

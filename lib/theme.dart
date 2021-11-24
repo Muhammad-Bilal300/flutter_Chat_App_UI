@@ -23,10 +23,11 @@ ThemeData lightThemeData(BuildContext context) {
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: Colors.white,
-      selectedItemColor: kContentColorLightTheme.withOpacity(0.7),
-      unselectedItemColor: kContentColorLightTheme.withOpacity(0.32),
+      selectedItemColor:kPrimaryColor,
+      unselectedItemColor: kContentColorLightTheme.withOpacity(0.7),
       selectedIconTheme: IconThemeData(color: kPrimaryColor),
       showUnselectedLabels: true,
+      
     ),
   );
 }
@@ -47,13 +48,15 @@ ThemeData darkThemeData(BuildContext context) {
       error: kErrorColor,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: kContentColorLightTheme,
-      selectedItemColor: Colors.white70,
-      unselectedItemColor: kContentColorDarkTheme.withOpacity(0.32),
+      backgroundColor: Colors.white.withOpacity(0.1),
+      selectedItemColor:kPrimaryColor,
+      unselectedItemColor: kContentColorDarkTheme.withOpacity(0.7),
       selectedIconTheme: IconThemeData(color: kPrimaryColor),
       showUnselectedLabels: true,
+      elevation: 3,
+      
     ),
   );
 }
 
-final appBarTheme = AppBarTheme(centerTitle: false, elevation: 0);
+final appBarTheme = AppBarTheme(centerTitle: false, elevation: 0,backgroundColor: kPrimaryColor);
